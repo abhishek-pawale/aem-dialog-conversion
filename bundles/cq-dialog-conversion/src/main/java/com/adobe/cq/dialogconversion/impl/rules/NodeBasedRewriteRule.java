@@ -454,7 +454,7 @@ public class NodeBasedRewriteRule implements DialogRewriteRule {
 
                     // negate boolean properties if negation character has been set
                     String negate = matcher.group(1);
-                    if ("!".equals(negate) && originalProperty.getType() == PropertyType.BOOLEAN) {
+                    if ("!".equals(negate) && (originalProperty.getType() == PropertyType.BOOLEAN || originalProperty.getType() == PropertyType.STRING)) {
                         newProperty.setValue(!newProperty.getBoolean());
                     }
 
