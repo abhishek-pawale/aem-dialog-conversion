@@ -5,18 +5,18 @@
         <textfield/>
     </patterns>
     <replacement
-        jcr:primaryType="nt:unstructured"
-        cq:rewriteFinal="{Boolean}true">
+        cq:rewriteFinal="{Boolean}true"
+        jcr:primaryType="nt:unstructured">
         <text
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-            fieldLabel="${./fieldLabel}"
-            fieldDescription="${./fieldDescription}"
-            name="${./name}"
-            value="${./value}"
-            required="!${./allowBlank}"
             disabled="${./disabled}"
             emptyText="${./emptyText}"
-            maxlength="${./maxLength}"/>
+            fieldDescription="${./fieldDescription}"
+            fieldLabel="${./fieldLabel}"
+            maxlength="${./maxLength}"
+            name="${./name}"
+            required="!${./allowBlank}"
+            value="${./value}"/>
     </replacement>
 </jcr:root>

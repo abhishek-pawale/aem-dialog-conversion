@@ -5,14 +5,14 @@
         <fileupload/>
     </patterns>
     <replacement
-        jcr:primaryType="nt:unstructured"
-        cq:rewriteFinal="{Boolean}true">
+        cq:rewriteFinal="{Boolean}true"
+        jcr:primaryType="nt:unstructured">
         <fileupload
             jcr:primaryType="nt:unstructured"
             sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-            fieldLabel="${./fieldLabel}"
+            disabled="${./disabled}"
             fieldDescription="${./fieldDescription}"
-            name="${./name}"
-            disabled="${./disabled}"/>
+            fieldLabel="${./fieldLabel}"
+            name="${./name}"/>
     </replacement>
 </jcr:root>

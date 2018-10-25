@@ -5,13 +5,13 @@
         <button/>
     </patterns>
     <replacement
-        jcr:primaryType="nt:unstructured"
-        cq:rewriteFinal="{Boolean}true">
+        cq:rewriteFinal="{Boolean}true"
+        jcr:primaryType="nt:unstructured">
         <button
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/button"
-            type="button"
+            disabled="${./disabled}"
             text="${./text}"
-            disabled="${./disabled}"/>
+            type="button"/>
     </replacement>
 </jcr:root>

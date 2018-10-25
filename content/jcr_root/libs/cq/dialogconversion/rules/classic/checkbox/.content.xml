@@ -6,16 +6,15 @@
     </patterns>
     <replacement jcr:primaryType="nt:unstructured">
         <checkbox
+            cq:rewriteFinal="{Boolean}true"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-            fieldLabel="${./fieldLabel}"
+            checked="${./checked}"
+            disabled="${./disabled}"
             fieldDescription="${./fieldDescription}"
+            fieldLabel="${./fieldLabel}"
             name="${./name}"
             text="[${./fieldLabel},${./boxLabel}]"
-            value="[${./inputValue},${./value}]"
-            disabled="${./disabled}"
-            checked="${./checked}"
-            cq:rewriteFinal="{Boolean}true">
-        </checkbox>
+            value="[${./inputValue},${./value}]"/>
     </replacement>
 </jcr:root>

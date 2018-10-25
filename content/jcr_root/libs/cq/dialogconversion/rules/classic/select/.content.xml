@@ -5,15 +5,16 @@
         <select/>
     </patterns>
     <replacement
-        jcr:primaryType="nt:unstructured"
-        cq:rewriteFinal="{Boolean}true">
+        cq:rewriteFinal="{Boolean}true"
+        jcr:primaryType="nt:unstructured">
         <select
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/form/select"
-            fieldLabel="${./fieldLabel}"
-            fieldDescription="${./fieldDescription}"
-            name="${./name}"
             disabled="${./disabled}"
+            fieldDescription="${./fieldDescription}"
+            fieldLabel="${./fieldLabel}"
+            name="${./name}"
+            required="!${./allowBlank}"
             value="[${./value},${./defaultValue}]">
             <items
                 cq:rewriteMapChildren="./options"

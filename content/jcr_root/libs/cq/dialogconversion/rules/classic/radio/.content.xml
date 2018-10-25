@@ -6,12 +6,16 @@
     </patterns>
     <replacement jcr:primaryType="nt:unstructured">
         <radio
+            cq:rewriteFinal="{Boolean}true"
             jcr:primaryType="nt:unstructured"
-            text="${./fieldLabel}"
-            value="${./inputValue}"
-            disabled="${./disabled}"
+            sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
             checked="${./checked}"
-            cq:rewriteFinal="{Boolean}true">
+            disabled="${./disabled}"
+            text="${./fieldLabel}"
+            value="${./inputValue}">
+            <items
+                cq:rewriteMapChildren="./options"
+                jcr:primaryType="nt:unstructured"/>
         </radio>
     </replacement>
 </jcr:root>

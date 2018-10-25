@@ -3,6 +3,7 @@
     jcr:primaryType="cq:Widget"
     type="select"
     xtype="selection">
-    <options jcr:primaryType="cq:WidgetCollection"
-        cq:rewriteOptional="{Boolean}true"/>
+    <options
+        cq:rewriteOptional="{Boolean}true"
+        jcr:primaryType="cq:WidgetCollection"/>
 </jcr:root>

@@ -5,20 +5,20 @@
         <numberfield/>
     </patterns>
     <replacement
-        jcr:primaryType="nt:unstructured"
-        cq:rewriteFinal="{Boolean}true">
+        cq:rewriteFinal="{Boolean}true"
+        jcr:primaryType="nt:unstructured">
         <numberfield
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
-            fieldLabel="${./fieldLabel}"
-            fieldDescription="${./fieldDescription}"
-            name="${./name}"
-            value="${./value}"
             defaultValue="${./defaultValue}"
-            required="!${./allowBlank}"
             disabled="${./disabled}"
-            min="${./minValue}"
+            fieldDescription="${./fieldDescription}"
+            fieldLabel="${./fieldLabel}"
             max="${./maxValue}"
-            step="${./step}"/>
+            min="${./minValue}"
+            name="${./name}"
+            required="!${./allowBlank}"
+            step="${./step}"
+            value="${./value}"/>
     </replacement>
 </jcr:root>
